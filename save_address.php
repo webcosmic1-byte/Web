@@ -12,7 +12,7 @@ if (isset($_POST['lat']) && isset($_POST['lon'])) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     
     // CRITICAL: OpenStreetMap requires a User-Agent header
-    curl_setopt($ch, CURLOPT_USERAGENT, 'MyGeoApp/1.0 (contact@example.com)');
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) CodeTester/1.0');
     
     // Execute the request
     $response = curl_exec($ch);
