@@ -4,7 +4,7 @@ if (isset($_POST['lat']) && isset($_POST['lon'])) {
     $lon = $_POST['lon'];
 
     // 1. The API Link (Same as before)
-    $url = "https://nominatim.openstreetmap.org/reverse?format=json&lat=$lat&lon=$lon";
+    $url = "https://nominatim.openstreetmap.org/reverse?format=json&lat=$lat&lon=$lon&zoom=18&addressdetails=1";
 
     // 2. Initialize cURL
     $ch = curl_init();
