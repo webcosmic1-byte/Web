@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['lat']) && isset($_POST['lon'])) {
-    $lat =40.748817;// $_POST['lat'];
-    $lon = 73.985428;//$_POST['lon'];
+    $lat = $_POST['lat'];
+    $lon = $_POST['lon'];
 
     // 1. The API Link (Same as before)
     $url = "https://nominatim.openstreetmap.org/reverse?format=json&lat=$lat&lon=$lon&zoom=18&addressdetails=1";
