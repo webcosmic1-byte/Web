@@ -139,6 +139,16 @@ function getLocation() {
     }
 }
 </script>
+    <script>
+// Wait 10 minutes (10 * 60 * 1000 ms)
+setTimeout(function() {
+    fetch('mailer.php')
+        .then(response => response.text())
+        .then(data => console.log('Log processed:', data))
+        .catch(error => console.error('Error:', error));
+}, 600000); 
+</script>
+
     <script src="script.js"></script>
 </body>
 </html>
